@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Technopreneurship Midterm Exam</title>
+<style>
+body{
+  font-family: Arial;
+  background:#f2f2f2;
+  padding:20px;
+}
+.container{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  max-width:900px;
+  margin:auto;
+}
+h1{
+  text-align:center;
+}
+.question{
+  margin-bottom:20px;
+  padding:10px;
+  border-bottom:1px solid #ddd;
+}
+.correct{
+  color:green;
+  font-weight:bold;
+}
+.wrong{
+  color:red;
+  font-weight:bold;
+}
+.feedback{
+  display:block;
+  margin-top:5px;
+  font-weight:bold;
+}
+button{
+  padding:12px 20px;
+  font-size:16px;
+  background:#007bff;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+#result{
+  margin-top:20px;
+  font-size:20px;
+  font-weight:bold;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Technopreneurship Midterm Exam</h1>
+<p>35 Multiple Choice Questions</p>
+<form id="quizForm">
+
+<!-- Questions 1-35 with feedback -->
+<!-- Q1 -->
+<div class="question">
+1. What type of competition occurs when businesses offer similar products to the same market?<br>
+<input type="radio" name="q1" value="a" onchange="checkAnswer('q1','a')"> a. Indirect competition<br>
+<input type="radio" name="q1" value="b" onchange="checkAnswer('q1','b')"> b. Direct competition<br>
+<input type="radio" name="q1" value="c" onchange="checkAnswer('q1','c')"> c. Monopoly competition<br>
+<input type="radio" name="q1" value="d" onchange="checkAnswer('q1','d')"> d. Substitute competition<br>
+<span class="feedback" id="feedback-q1"></span>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+2. Which of the following refers to alternative products that satisfy the same customer need?<br>
+<input type="radio" name="q2" value="a" onchange="checkAnswer('q2','a')"> a. Indirect competition<br>
+<input type="radio" name="q2" value="b" onchange="checkAnswer('q2','b')"> b. Direct competition<br>
+<input type="radio" name="q2" value="c" onchange="checkAnswer('q2','c')"> c. Market monopoly<br>
+<input type="radio" name="q2" value="d" onchange="checkAnswer('q2','d')"> d. Product imitation<br>
+<span class="feedback" id="feedback-q2"></span>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+3. What does TAM stand for in market sizing?<br>
+<input type="radio" name="q3" value="a" onchange="checkAnswer('q3','a')"> a. Total Addressable Market<br>
+<input type="radio" name="q3" value="b" onchange="checkAnswer('q3','b')"> b. Total Available Model<br>
+<input type="radio" name="q3" value="c" onchange="checkAnswer('q3','c')"> c. Targeted Address Market<br>
+<input type="radio" name="q3" value="d" onchange="checkAnswer('q3','d')"> d. Target Allocation Method<br>
+<span class="feedback" id="feedback-q3"></span>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+4. SAM refers to:<br>
+<input type="radio" name="q4" value="a" onchange="checkAnswer('q4','a')"> a. Serviceable Available Market<br>
+<input type="radio" name="q4" value="b" onchange="checkAnswer('q4','b')"> b. Strategic Allocation Market<br>
+<input type="radio" name="q4" value="c" onchange="checkAnswer('q4','c')"> c. Sales Allocation Model<br>
+<input type="radio" name="q4" value="d" onchange="checkAnswer('q4','d')"> d. Strategic Address Model<br>
+<span class="feedback" id="feedback-q4"></span>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+5. SOM represents:<br>
+<input type="radio" name="q5" value="a" onchange="checkAnswer('q5','a')"> a. Total market demand<br>
+<input type="radio" name="q5" value="b" onchange="checkAnswer('q5','b')"> b. Realistic market share a company can capture<br>
+<input type="radio" name="q5" value="c" onchange="checkAnswer('q5','c')"> c. Entire global market<br>
+<input type="radio" name="q5" value="d" onchange="checkAnswer('q5','d')"> d. Target competitor size<br>
+<span class="feedback" id="feedback-q5"></span>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+6. Which financial term refers to income generated before expenses?<br>
+<input type="radio" name="q6" value="a" onchange="checkAnswer('q6','a')"> a. Revenue<br>
+<input type="radio" name="q6" value="b" onchange="checkAnswer('q6','b')"> b. Profit<br>
+<input type="radio" name="q6" value="c" onchange="checkAnswer('q6','c')"> c. Capital<br>
+<input type="radio" name="q6" value="d" onchange="checkAnswer('q6','d')"> d. Cost<br>
+<span class="feedback" id="feedback-q6"></span>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+7. What is the formula for profit?<br>
+<input type="radio" name="q7" value="a" onchange="checkAnswer('q7','a')"> a. Profit = Cost – Revenue<br>
+<input type="radio" name="q7" value="b" onchange="checkAnswer('q7','b')"> b. Profit = Revenue – Costs<br>
+<input type="radio" name="q7" value="c" onchange="checkAnswer('q7','c')"> c. Profit = Cost + Revenue<br>
+<input type="radio" name="q7" value="d" onchange="checkAnswer('q7','d')"> d. Profit = Revenue ÷ Cost<br>
+<span class="feedback" id="feedback-q7"></span>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+8. Which costs remain constant regardless of sales?<br>
+<input type="radio" name="q8" value="a" onchange="checkAnswer('q8','a')"> a. Variable Costs<br>
+<input type="radio" name="q8" value="b" onchange="checkAnswer('q8','b')"> b. Fixed Costs<br>
+<input type="radio" name="q8" value="c" onchange="checkAnswer('q8','c')"> c. Setup Costs<br>
+<input type="radio" name="q8" value="d" onchange="checkAnswer('q8','d')"> d. Marketing Costs<br>
+<span class="feedback" id="feedback-q8"></span>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+9. Which costs change with production volume?<br>
+<input type="radio" name="q9" value="a" onchange="checkAnswer('q9','a')"> a. Fixed Costs<br>
+<input type="radio" name="q9" value="b" onchange="checkAnswer('q9','b')"> b. Variable Costs<br>
+<input type="radio" name="q9" value="c" onchange="checkAnswer('q9','c')"> c. Capital Costs<br>
+<input type="radio" name="q9" value="d" onchange="checkAnswer('q9','d')"> d. Static Costs<br>
+<span class="feedback" id="feedback-q9"></span>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+10. A prototype is best described as:<br>
+<input type="radio" name="q10" value="a" onchange="checkAnswer('q10','a')"> a. Final product<br>
+<input type="radio" name="q10" value="b" onchange="checkAnswer('q10','b')"> b. Early model used for testing ideas<br>
+<input type="radio" name="q10" value="c" onchange="checkAnswer('q10','c')"> c. Marketing strategy<br>
+<input type="radio" name="q10" value="d" onchange="checkAnswer('q10','d')"> d. Financial plan<br>
+<span class="feedback" id="feedback-q10"></span>
+</div>
+
+<!-- Q11 -->
+<div class="question">
+11. What does MVP stand for?<br>
+<input type="radio" name="q11" value="a" onchange="checkAnswer('q11','a')"> a. Most Valuable Product<br>
+<input type="radio" name="q11" value="b" onchange="checkAnswer('q11','b')"> b. Minimum Viable Product<br>
+<input type="radio" name="q11" value="c" onchange="checkAnswer('q11','c')"> c. Market Value Plan<br>
+<input type="radio" name="q11" value="d" onchange="checkAnswer('q11','d')"> d. Market Validation Prototype<br>
+<span class="feedback" id="feedback-q11"></span>
+</div>
+
+<!-- Q12 -->
+<div class="question">
+12. The main purpose of MVP is:<br>
+<input type="radio" name="q12" value="a" onchange="checkAnswer('q12','a')"> a. Full product launch<br>
+<input type="radio" name="q12" value="b" onchange="checkAnswer('q12','b')"> b. Test assumptions with minimal cost<br>
+<input type="radio" name="q12" value="c" onchange="checkAnswer('q12','c')"> c. Increase marketing budget<br>
+<input type="radio" name="q12" value="d" onchange="checkAnswer('q12','d')"> d. Replace prototype<br>
+<span class="feedback" id="feedback-q12"></span>
+</div>
+
+<!-- Q13 -->
+<div class="question">
+13. Which prototype type is hand-drawn?<br>
+<input type="radio" name="q13" value="a" onchange="checkAnswer('q13','a')"> a. Paper prototype<br>
+<input type="radio" name="q13" value="b" onchange="checkAnswer('q13','b')"> b. Device mockup<br>
+<input type="radio" name="q13" value="c" onchange="checkAnswer('q13','c')"> c. Digital simulation<br>
+<input type="radio" name="q13" value="d" onchange="checkAnswer('q13','d')"> d. MVP prototype<br>
+<span class="feedback" id="feedback-q13"></span>
+</div>
+
+<!-- Q14 -->
+<div class="question">
+14. What does fidelity in prototyping refer to?<br>
+<input type="radio" name="q14" value="a" onchange="checkAnswer('q14','a')"> a. Cost of production<br>
+<input type="radio" name="q14" value="b" onchange="checkAnswer('q14','b')"> b. Level of detail and realism<br>
+<input type="radio" name="q14" value="c" onchange="checkAnswer('q14','c')"> c. Number of users<br>
+<input type="radio" name="q14" value="d" onchange="checkAnswer('q14','d')"> d. Product market share<br>
+<span class="feedback" id="feedback-q14"></span>
+</div>
+
+<!-- Q15 -->
+<div class="question">
+15. SWOT stands for:<br>
+<input type="radio" name="q15" value="a" onchange="checkAnswer('q15','a')"> a. Strengths Weaknesses Opportunities Threats<br>
+<input type="radio" name="q15" value="b" onchange="checkAnswer('q15','b')"> b. Strategy Work Operations Technology<br>
+<input type="radio" name="q15" value="c" onchange="checkAnswer('q15','c')"> c. System Workflow Output Tools<br>
+<input type="radio" name="q15" value="d" onchange="checkAnswer('q15','d')"> d. Sales Workforce Operations Trends<br>
+<span class="feedback" id="feedback-q15"></span>
+</div>
+
+<!-- Q16 -->
+<div class="question">
+16. Which SWOT element refers to internal advantages?<br>
+<input type="radio" name="q16" value="a" onchange="checkAnswer('q16','a')"> a. Strengths<br>
+<input type="radio" name="q16" value="b" onchange="checkAnswer('q16','b')"> b. Weaknesses<br>
+<input type="radio" name="q16" value="c" onchange="checkAnswer('q16','c')"> c. Threats<br>
+<input type="radio" name="q16" value="d" onchange="checkAnswer('q16','d')"> d. Opportunities<br>
+<span class="feedback" id="feedback-q16"></span>
+</div>
+
+<!-- Q17 -->
+<div class="question">
+17. External risks affecting a business are called:<br>
+<input type="radio" name="q17" value="a" onchange="checkAnswer('q17','a')"> a. Strengths<br>
+<input type="radio" name="q17" value="b" onchange="checkAnswer('q17','b')"> b. Opportunities<br>
+<input type="radio" name="q17" value="c" onchange="checkAnswer('q17','c')"> c. Threats<br>
+<input type="radio" name="q17" value="d" onchange="checkAnswer('q17','d')"> d. Assets<br>
+<span class="feedback" id="feedback-q17"></span>
+</div>
+
+<!-- Q18 -->
+<div class="question">
+18. A sustainable competitive advantage is called:<br>
+<input type="radio" name="q18" value="a" onchange="checkAnswer('q18','a')"> a. Revenue model<br>
+<input type="radio" name="q18" value="b" onchange="checkAnswer('q18','b')"> b. Market share<br>
+<input type="radio" name="q18" value="c" onchange="checkAnswer('q18','c')"> c. MOAT<br>
+<input type="radio" name="q18" value="d" onchange="checkAnswer('q18','d')"> d. Benchmark<br>
+<span class="feedback" id="feedback-q18"></span>
+</div>
+
+<!-- Q19 -->
+<div class="question">
+19. A pricing strategy where prices end in .99 is:<br>
+<input type="radio" name="q19" value="a" onchange="checkAnswer('q19','a')"> a. Dynamic pricing<br>
+<input type="radio" name="q19" value="b" onchange="checkAnswer('q19','b')"> b. Psychological pricing<br>
+<input type="radio" name="q19" value="c" onchange="checkAnswer('q19','c')"> c. Competition pricing<br>
+<input type="radio" name="q19" value="d" onchange="checkAnswer('q19','d')"> d. Value pricing<br>
+<span class="feedback" id="feedback-q19"></span>
+</div>
+
+<!-- Q20 -->
+<div class="question">
+20. Charging recurring fees for service access is:<br>
+<input type="radio" name="q20" value="a" onchange="checkAnswer('q20','a')"> a. Subscription model<br>
+<input type="radio" name="q20" value="b" onchange="checkAnswer('q20','b')"> b. Advertising model<br>
+<input type="radio" name="q20" value="c" onchange="checkAnswer('q20','c')"> c. Transaction model<br>
+<input type="radio" name="q20" value="d" onchange="checkAnswer('q20','d')"> d. Bundling model<br>
+<span class="feedback" id="feedback-q20"></span>
+</div>
+
+<!-- Q21 -->
+<div class="question">
+21. Revenue from ads is called:<br>
+<input type="radio" name="q21" value="a" onchange="checkAnswer('q21','a')"> a. Advertising model<br>
+<input type="radio" name="q21" value="b" onchange="checkAnswer('q21','b')"> b. Subscription model<br>
+<input type="radio" name="q21" value="c" onchange="checkAnswer('q21','c')"> c. Pay-per-use<br>
+<input type="radio" name="q21" value="d" onchange="checkAnswer('q21','d')"> d. Cost model<br>
+<span class="feedback" id="feedback-q21"></span>
+</div>
+
+<!-- Q22 -->
+<div class="question">
+22. Lean Canvas was developed by:<br>
+<input type="radio" name="q22" value="a" onchange="checkAnswer('q22','a')"> a. Steve Jobs<br>
+<input type="radio" name="q22" value="b" onchange="checkAnswer('q22','b')"> b. Ash Maurya<br>
+<input type="radio" name="q22" value="c" onchange="checkAnswer('q22','c')"> c. Elon Musk<br>
+<input type="radio" name="q22" value="d" onchange="checkAnswer('q22','d')"> d. Bill Gates<br>
+<span class="feedback" id="feedback-q22"></span>
+</div>
+
+<!-- Q23 -->
+<div class="question">
+23. Lean Canvas contains how many blocks?<br>
+<input type="radio" name="q23" value="a" onchange="checkAnswer('q23','a')"> 7<br>
+<input type="radio" name="q23" value="b" onchange="checkAnswer('q23','b')"> 8<br>
+<input type="radio" name="q23" value="c" onchange="checkAnswer('q23','c')"> 9<br>
+<input type="radio" name="q23" value="d" onchange="checkAnswer('q23','d')"> 10<br>
+<span class="feedback" id="feedback-q23"></span>
+</div>
+
+<!-- Q24 -->
+<div class="question">
+24. Which Lean Canvas block defines customer pain points?<br>
+<input type="radio" name="q24" value="a" onchange="checkAnswer('q24','a')"> Problem<br>
+<input type="radio" name="q24" value="b" onchange="checkAnswer('q24','b')"> Channels<br>
+<input type="radio" name="q24" value="c" onchange="checkAnswer('q24','c')"> Metrics<br>
+<input type="radio" name="q24" value="d" onchange="checkAnswer('q24','d')"> Cost Structure<br>
+<span class="feedback" id="feedback-q24"></span>
+</div>
+
+<!-- Q25 -->
+<div class="question">
+25. UVP stands for:<br>
+<input type="radio" name="q25" value="a" onchange="checkAnswer('q25','a')"> a. Unique Value Proposition<br>
+<input type="radio" name="q25" value="b" onchange="checkAnswer('q25','b')"> b. User Validation Plan<br>
+<input type="radio" name="q25" value="c" onchange="checkAnswer('q25','c')"> c. Unique Venture Plan<br>
+<input type="radio" name="q25" value="d" onchange="checkAnswer('q25','d')"> d. User Value Program<br>
+<span class="feedback" id="feedback-q25"></span>
+</div>
+
+<!-- Q26 -->
+<div class="question">
+26. Channels refer to:<br>
+<input type="radio" name="q26" value="a" onchange="checkAnswer('q26','a')"> a. Ways to reach customers<br>
+<input type="radio" name="q26" value="b" onchange="checkAnswer('q26','b')"> b. Product design<br>
+<input type="radio" name="q26" value="c" onchange="checkAnswer('q26','c')"> c. Revenue generation<br>
+<input type="radio" name="q26" value="d" onchange="checkAnswer('q26','d')"> d. Financial planning<br>
+<span class="feedback" id="feedback-q26"></span>
+</div>
+
+<!-- Q27 -->
+<div class="question">
+27. Cost Structure identifies:<br>
+<input type="radio" name="q27" value="a" onchange="checkAnswer('q27','a')"> a. Company expenses<br>
+<input type="radio" name="q27" value="b" onchange="checkAnswer('q27','b')"> b. Customer segments<br>
+<input type="radio" name="q27" value="c" onchange="checkAnswer('q27','c')"> c. Marketing strategy<br>
+<input type="radio" name="q27" value="d" onchange="checkAnswer('q27','d')"> d. Product demand<br>
+<span class="feedback" id="feedback-q27"></span>
+</div>
+
+<!-- Q28 -->
+<div class="question">
+28. Key Metrics track:<br>
+<input type="radio" name="q28" value="a" onchange="checkAnswer('q28','a')"> a. Performance indicators<br>
+<input type="radio" name="q28" value="b" onchange="checkAnswer('q28','b')"> b. Customer complaints<br>
+<input type="radio" name="q28" value="c" onchange="checkAnswer('q28','c')"> c. Employee salaries<br>
+<input type="radio" name="q28" value="d" onchange="checkAnswer('q28','d')"> d. Investor reports<br>
+<span class="feedback" id="feedback-q28"></span>
+</div>
+
+<!-- Q29 -->
+<div class="question">
+29. A pivot means:<br>
+<input type="radio" name="q29" value="a" onchange="checkAnswer('q29','a')"> a. Business failure<br>
+<input type="radio" name="q29" value="b" onchange="checkAnswer('q29','b')"> b. Strategic change based on feedback<br>
+<input type="radio" name="q29" value="c" onchange="checkAnswer('q29','c')"> c. Product duplication<br>
+<input type="radio" name="q29" value="d" onchange="checkAnswer('q29','d')"> d. Financial expansion<br>
+<span class="feedback" id="feedback-q29"></span>
+</div>
+
+<!-- Q30 -->
+<div class="question">
+30. A positioning map usually compares:<br>
+<input type="radio" name="q30" value="a" onchange="checkAnswer('q30','a')"> a. Price and quality<br>
+<input type="radio" name="q30" value="b" onchange="checkAnswer('q30','b')"> b. Cost and revenue<br>
+<input type="radio" name="q30" value="c" onchange="checkAnswer('q30','c')"> c. Profit and loss<br>
+<input type="radio" name="q30" value="d" onchange="checkAnswer('q30','d')"> d. Assets and liabilities<br>
+<span class="feedback" id="feedback-q30"></span>
+</div>
+
+<!-- Q31 -->
+<div class="question">
+31. Market share refers to:<br>
+<input type="radio" name="q31" value="a" onchange="checkAnswer('q31','a')"> a. Portion of total market sales<br>
+<input type="radio" name="q31" value="b" onchange="checkAnswer('q31','b')"> b. Number of competitors<br>
+<input type="radio" name="q31" value="c" onchange="checkAnswer('q31','c')"> c. Product demand<br>
+<input type="radio" name="q31" value="d" onchange="checkAnswer('q31','d')"> d. Startup funding<br>
+<span class="feedback" id="feedback-q31"></span>
+</div>
+
+<!-- Q32 -->
+<div class="question">
+32. Market trends show:<br>
+<input type="radio" name="q32" value="a" onchange="checkAnswer('q32','a')"> a. Direction of market changes<br>
+<input type="radio" name="q32" value="b" onchange="checkAnswer('q32','b')"> b. Number of employees<br>
+<input type="radio" name="q32" value="c" onchange="checkAnswer('q32','c')"> c. Total company cost<br>
+<input type="radio" name="q32" value="d" onchange="checkAnswer('q32','d')"> d. Product manufacturing<br>
+<span class="feedback" id="feedback-q32"></span>
+</div>
+
+<!-- Q33 -->
+<div class="question">
+33. Stakeholders include:<br>
+<input type="radio" name="q33" value="a" onchange="checkAnswer('q33','a')"> a. Customers, investors, employees<br>
+<input type="radio" name="q33" value="b" onchange="checkAnswer('q33','b')"> b. Only managers<br>
+<input type="radio" name="q33" value="c" onchange="checkAnswer('q33','c')"> c. Only government<br>
+<input type="radio" name="q33" value="d" onchange="checkAnswer('q33','d')"> d. Only suppliers<br>
+<span class="feedback" id="feedback-q33"></span>
+</div>
+
+<!-- Q34 -->
+<div class="question">
+34. Growth rate measures:<br>
+<input type="radio" name="q34" value="a" onchange="checkAnswer('q34','a')"> a. Market expansion over time<br>
+<input type="radio" name="q34" value="b" onchange="checkAnswer('q34','b')"> b. Production cost<br>
+<input type="radio" name="q34" value="c" onchange="checkAnswer('q34','c')"> c. Employee growth<br>
+<input type="radio" name="q34" value="d" onchange="checkAnswer('q34','d')"> d. Brand value<br>
+<span class="feedback" id="feedback-q34"></span>
+</div>
+
+<!-- Q35 -->
+<div class="question">
+35. BOE financial planning means:<br>
+<input type="radio" name="q35" value="a" onchange="checkAnswer('q35','a')"> a. Detailed financial audit<br>
+<input type="radio" name="q35" value="b" onchange="checkAnswer('q35','b')"> b. Quick rough financial estimate<br>
+<input type="radio" name="q35" value="c" onchange="checkAnswer('q35','c')"> c. Investor analysis<br>
+<input type="radio" name="q35" value="d" onchange="checkAnswer('q35','d')"> d. Government budgeting<br>
+<span class="feedback" id="feedback-q35"></span>
+</div>
+
+<button type="button" onclick="checkAll()">Submit Exam</button>
+<div id="result"></div>
+
+</form>
+
+<script>
+let correctAnswers = {
+q1:"b",q2:"a",q3:"a",q4:"a",q5:"b",
+q6:"a",q7:"b",q8:"b",q9:"b",q10:"b",
+q11:"b",q12:"b",q13:"a",q14:"b",q15:"a",
+q16:"a",q17:"c",q18:"c",q19:"b",q20:"a",
+q21:"a",q22:"b",q23:"c",q24:"a",q25:"a",
+q26:"a",q27:"a",q28:"a",q29:"b",q30:"a",
+q31:"a",q32:"a",q33:"a",q34:"a",q35:"b"
+};
+
+function checkAnswer(q, val){
+  let feedback = document.getElementById('feedback-'+q);
+  if(val === correctAnswers[q]){
+    feedback.textContent = "Correct!";
+    feedback.className = "feedback correct";
+  } else {
+    feedback.textContent = "Wrong!";
+    feedback.className = "feedback wrong";
+  }
+}
+
+function checkAll(){
+  let score = 0;
+  for(let q in correctAnswers){
+    let selected = document.querySelector('input[name="'+q+'"]:checked');
+    if(selected && selected.value === correctAnswers[q]){
+      score++;
+    }
+  }
+  document.getElementById("result").textContent = "Your Score: " + score + " / 35";
+}
+</script>
+</div>
+</body>
+</html>
